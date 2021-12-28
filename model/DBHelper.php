@@ -102,6 +102,19 @@
     //     mysqli_query($conn, $query);
     //     return mysqli_affected_rows($conn);
     // }
+    function editpassword($data){ 
+        global $conn, $tabledb;
+        $id = $data["id"];
+        $password = htmlspecialchars($data["passwordbaru"]);
+
+        $query = "UPDATE $tabledb SET 
+                    password = '$password'
+                WHERE id_user='$id'";
+
+        mysqli_query($conn, $query);
+        
+        return mysqli_affected_rows($conn);
+    }
 
     function editdataprofile($data, $dir){ 
         global $conn, $tabledb2;
@@ -126,8 +139,6 @@
                     alamat='$alamat', 
                     foto_profil='$fotoprofileuserbaru'
                 WHERE id_user='$id'";
-
-        echo $query;
 
         mysqli_query($conn, $query);
 

@@ -43,6 +43,7 @@
 							</a>
 							<ul class="dropdown-menu text-center dropdown-menu-md-end" aria-labelledby="navbarDropdown">
 								<li><a class="dropdown-item" href="profile/">Profile</a></li>
+								<li><a class="dropdown-item" href="changepassword/">Change Password</a></li>
 								<li><a class="dropdown-item" style="cursor: pointer;" onclick="alert('Masih belum berfungsi')">Masukan dan Saran</a></li>
 								<li><hr class="dropdown-divider"></li>
 								<li><a class="dropdown-item" href="logout/">Logout</a></li>
